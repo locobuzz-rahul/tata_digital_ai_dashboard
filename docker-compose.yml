@@ -1,0 +1,20 @@
+version: '2.2'
+
+services:
+  tata-digital-ai-dashboard:
+
+    build:
+      context: .
+    restart: always
+    environment:
+      - TATA_DIGITAL_AI_DASHBOARD=/home/code
+      - TATA_DIGITAL_AI_DASHBOARD_DATA=/home/data
+      - DEBUG=False
+      - IN_DOCKER=True
+      - APP_MAIN_PORT=3132
+    volumes:
+      - '/home/user/Projects/tata_digital_ai_dashboard/tata_digital_ai_dashboard_data:/home/data'
+    network_mode: host
+
+
+

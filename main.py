@@ -1,10 +1,7 @@
 import string
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
 import altair as alt
-import plotly.express as px
-import plotly.graph_objects as go
 from datetime import datetime, timedelta, date
 from database import MssqlHandler
 from agent import AgentReply
